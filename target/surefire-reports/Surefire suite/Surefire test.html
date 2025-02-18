@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 18 13:25:29 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37352 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.learn.automation.TestRunner.TestRunner_FailedTestCase.runScenario()'><b>runScenario</b><br>Test class: com.learn.automation.TestRunner.TestRunner_FailedTestCase<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Searching Products", "Optional[Verify The Serach Product Functionlity]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-VB9FJKNE&apos;, ip: &apos;192.168.1.39&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.learn.automation.StepDefinition.GreenKartStepDefinition.userIsInGreenCartLandingPage(GreenKartStepDefinition.java:36)
+	at ?.User is in GreenCart Landing Page(file:///C:/Users/prono/OneDrive/Documents/CucumberFrameWork/src/test/java/com/learn/automation/featureFiles/searchProduct.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1391249801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391249801'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-VB9FJKNE&apos;, ip: &apos;192.168.1.39&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.learn.automation.StepDefinition.GreenKartStepDefinition.userIsInGreenCartLandingPage(GreenKartStepDefinition.java:36)
+	at ?.User is in GreenCart Landing Page(file:///C:/Users/prono/OneDrive/Documents/CucumberFrameWork/src/test/java/com/learn/automation/featureFiles/searchProduct.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>com.learn.automation.TestRunner.TestRunner_FailedTestCase@378542de</td></tr>
+<tr>
+<td title='com.learn.automation.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.learn.automation.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Searching Products", "Optional[Verify The Serach Product Functionlity]"</td>
+<td><div><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
+	at com.learn.automation.StepDefinition.DealPageStepDefinition.verifyTheProductName(DealPageStepDefinition.java:42)
+	at ?.Verify the Product name(file:///C:/Users/prono/OneDrive/Documents/CucumberFrameWork/src/test/java/com/learn/automation/featureFiles/searchProduct.feature:8)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1040477753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1040477753'><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.learn.automation.StepDefinition.DealPageStepDefinition.verifyTheProductName(DealPageStepDefinition.java:42)
+	at ?.Verify the Product name(file:///C:/Users/prono/OneDrive/Documents/CucumberFrameWork/src/test/java/com/learn/automation/featureFiles/searchProduct.feature:8)
+</pre></div></td>
+<td>10</td>
+<td>com.learn.automation.TestRunner.TestRunner@346d61be</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.learn.automation.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.learn.automation.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Buying Product", "Optional[Verify The Checkout Service]"</td>
+<td></td>
+<td>13</td>
+<td>com.learn.automation.TestRunner.TestRunner@346d61be</td></tr>
+<tr>
+<td title='com.learn.automation.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.learn.automation.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Searching Products", "Optional[Verify The Serach Product Functionlity]"</td>
+<td></td>
+<td>10</td>
+<td>com.learn.automation.TestRunner.TestRunner@346d61be</td></tr>
+</table><p>
+</body>
+</html>

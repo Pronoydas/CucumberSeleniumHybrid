@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-18T13:21:51 IST" name="Automation Test " finished-at="2025-02-18T13:22:33 IST" duration-ms="42545">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-02-18T13:21:51 IST" name="UI Test" finished-at="2025-02-18T13:22:33 IST" duration-ms="42545">
+      <class name="com.learn.automation.TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:21:51 IST" name="setUpClass" finished-at="2025-02-18T13:21:52 IST" duration-ms="1356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7afe0e67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:21:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T13:22:10 IST" duration-ms="17742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Buying Product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify The Checkout Service]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:22:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T13:22:21 IST" duration-ms="10576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Searching Products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify The Serach Product Functionlity]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:22:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T13:22:31 IST" duration-ms="10406" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Searching Products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify The Serach Product Functionlity]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No data] but found [Beetroot]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No data] but found [Beetroot]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.learn.automation.StepDefinition.DealPageStepDefinition.verifyTheProductName(DealPageStepDefinition.java:42)
+at ✽.Verify the Product name(file:///C:/Users/prono/OneDrive/Documents/CucumberFrameWork/src/test/java/com/learn/automation/featureFiles/searchProduct.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:22:31 IST" name="tearDownClass" finished-at="2025-02-18T13:22:33 IST" duration-ms="2381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.learn.automation.TestRunner.TestRunner -->
+    </test> <!-- UI Test -->
+  </suite> <!-- Automation Test  -->
+</testng-results>
