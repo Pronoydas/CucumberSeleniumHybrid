@@ -2,26 +2,30 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T13:21:51 IST" name="Automation Test " finished-at="2025-02-18T13:22:33 IST" duration-ms="42545">
+  <suite started-at="2025-02-18T17:16:12 IST" name="Default suite" finished-at="2025-02-18T17:16:51 IST" duration-ms="39210">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-18T13:21:51 IST" name="UI Test" finished-at="2025-02-18T13:22:33 IST" duration-ms="42545">
+    <test started-at="2025-02-18T17:16:12 IST" name="Default test" finished-at="2025-02-18T17:16:51 IST" duration-ms="39210">
       <class name="com.learn.automation.TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:21:51 IST" name="setUpClass" finished-at="2025-02-18T13:21:52 IST" duration-ms="1356" status="PASS">
+        <test-method is-config="true" signature="setUpLoggert()[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" started-at="2025-02-18T17:16:11 IST" name="setUpLoggert" finished-at="2025-02-18T17:16:12 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpLoggert -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" started-at="2025-02-18T17:16:12 IST" name="setUpClass" finished-at="2025-02-18T17:16:13 IST" duration-ms="1086" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7afe0e67]]>
+                <![CDATA[org.testng.TestRunner@5ac044ef]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:21:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T13:22:10 IST" duration-ms="17742" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" started-at="2025-02-18T17:16:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T17:16:28 IST" duration-ms="15076" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:22:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T13:22:21 IST" duration-ms="10576" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" started-at="2025-02-18T17:16:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T17:16:39 IST" duration-ms="10742" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:22:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T13:22:31 IST" duration-ms="10406" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" started-at="2025-02-18T17:16:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T17:16:49 IST" duration-ms="10584" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,11 +90,11 @@ at ✽.Verify the Product name(file:///C:/Users/prono/OneDrive/Documents/Cucumbe
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.learn.automation.TestRunner.TestRunner@5b1669c0]" started-at="2025-02-18T13:22:31 IST" name="tearDownClass" finished-at="2025-02-18T13:22:33 IST" duration-ms="2381" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.learn.automation.TestRunner.TestRunner@16eb3ea3]" started-at="2025-02-18T17:16:49 IST" name="tearDownClass" finished-at="2025-02-18T17:16:51 IST" duration-ms="1606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.learn.automation.TestRunner.TestRunner -->
-    </test> <!-- UI Test -->
-  </suite> <!-- Automation Test  -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

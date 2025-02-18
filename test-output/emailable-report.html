@@ -8,16 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Automation Test </th></tr>
-<tr><td><a href="#t0">UI Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">42,545</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,210</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test </th></tr></tbody><tbody id="t0"><tr><th colspan="4">UI Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.learn.automation.TestRunner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1739865141058</td><td rowspan="1">10406</td></tr><tr><th colspan="4">UI Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.learn.automation.TestRunner.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="2">1739865112726</td><td rowspan="2">17742</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.learn.automation.TestRunner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1739879199015</td><td rowspan="1">10584</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.learn.automation.TestRunner.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="2">1739879188272</td><td rowspan="2">10742</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
 </table>
-<h2>UI Test</h2><h3 id="m0">com.learn.automation.TestRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Searching Products&quot;</td><td>&quot;Optional[Verify The Serach Product Functionlity]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [No data] but found [Beetroot]
+<h2>Default test</h2><h3 id="m0">com.learn.automation.TestRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Searching Products&quot;</td><td>&quot;Optional[Verify The Serach Product Functionlity]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [No data] but found [Beetroot]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
 	at com.learn.automation.StepDefinition.DealPageStepDefinition.verifyTheProductName(DealPageStepDefinition.java:42)
 	at ✽.Verify the Product name(file:///C:/Users/prono/OneDrive/Documents/CucumberFrameWork/src/test/java/com/learn/automation/featureFiles/searchProduct.feature:8)
-... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.learn.automation.TestRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Buying Product&quot;</td><td>&quot;Optional[Verify The Checkout Service]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.learn.automation.TestRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Searching Products&quot;</td><td>&quot;Optional[Verify The Serach Product Functionlity]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.learn.automation.TestRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Searching Products&quot;</td><td>&quot;Optional[Verify The Serach Product Functionlity]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.learn.automation.TestRunner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Buying Product&quot;</td><td>&quot;Optional[Verify The Checkout Service]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
